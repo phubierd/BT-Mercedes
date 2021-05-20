@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+/* HEADER */
+header.header{
+    background-color: black;
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    transition: 0.5s;
+}
+
+header.header a{
+    color: white;
+}
+header.header a:hover {
+    color: rgb(24, 108, 187);
+}
+header.header .myNav__icon a:hover {
+    color: white;
+}
+header.header li{
+    margin: 10px;
+}
+
+.navbar-toggler-icon i{
+    color: white;   
+}
+.navbar-toggler-icon:hover i{
+    color: rgb(24, 108, 187);  
+}
+
+/* chỉnh menu chữ khi màn hình nhỏ */
+.navbar-nav .nav-link{
+    text-align: center;
+    /* font-size: 24px; */
+}
+
+
+/* END HEADER */
+
+/* CAROUSEL */
+.myCarousel{
+    padding-top: 100px;
+}
+.myCarousel .carousel-caption{
+    top: 5%;
+    left: 10%;
+    text-align: left;
+    width: 30%;
+}
+.carousel-caption h5{
+    font-size:30px;
+}
+.carousel-caption-black h5{
+    color: black;
+}
+.carousel__text {
+   position: absolute;
+    margin: 0;
+    bottom: 5%;
+}
+.carousel-caption button{
+    background-color: #333;
+    color: white;
+    border: #333;
+    margin: 20px 30px;
+    
+}
+.carousel-caption button:hover{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.carousel__form{
+    background-color: #333333;
+}
+/* END CAROUSEL */
+
+
+/* PICTURE */
+.nav-link, .nav-tabs .nav-item.show .nav-link{
+    color: white;
+}
+.nav-link:hover a{
+    color: rgb(24, 108, 187);
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    
+    color: rgb(24, 108, 187);
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border-color: transparent;
+}
+.nav-tabs{
+    border-bottom: transparent;
+}
+.nav-tabs .nav-link.active{
+    border-bottom: 1px solid rgb(24, 108, 187);
+}
+
+
+/* Edit picture */
+.tab-content img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.picture .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+    padding: 1px;
+}
+.picture .row{
+    margin: auto;
+}
+
+/* text in picture */
+.picture__text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0,0,0,0.35);
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.picture__text p{
+    opacity: 0;
+    transition: 0.5s;
+}
+.picture .tab-content a:hover .picture__text{
+    height: 50%;
+    background-color: rgba(0,0,0,0.75);
+} 
+.picture .tab-content a:hover .picture__text p{
+    opacity: 1;
+}
+.picture .tab-content .picture__big a:hover .picture__text{
+    height: 30%;
+    background-color: rgba(0,0,0,0.75);
+}
+.picture__text h3{
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.picture__text p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+
+.picture__text--detail{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding-left: 10px;
+    opacity: 1;
+    transition: 0.5s;
+    font-size: 12px;
+}
+.picture .tab-content a:hover .picture__text--detail{
+    opacity: 0;
+}
+
+/* BUTTON */
+.picture__btn {
+    background-color: #202020;
+    border: 1px solid #202020;
+}
+/* END PICTURE */
+
+
